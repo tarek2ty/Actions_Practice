@@ -11,3 +11,10 @@ jobs:
     steps: 
       - name: print a welcome msg
         run: echo "this is my first workflow"
+
+      - name: checkout repo # github actions does not clone a repo by default; so if we want to run tests or do something, we must do this step
+        uses: actions/checkout@v6.0.1
+
+      - name: list repo files #after checkout, we should have the files
+        run: ls -la
+      
