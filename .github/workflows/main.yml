@@ -1,0 +1,13 @@
+name: my firts workflow
+on:
+  push: # trigger when a new code is pushed in the repo
+    branches:
+      - main # trigger on a list of branches
+
+jobs: 
+  example-job:
+    runs-on: ubuntu:latest ## the machine the runner will run on (linux, windows, mac)
+
+    steps: 
+      - name: print a welcome msg
+        run: echo "this is my first workflow"
