@@ -6,7 +6,7 @@ on:
 
 jobs: 
   example-job:
-    runs-on: ubuntu:latest ## the machine the runner will run on (linux, windows, mac)
+    runs-on: ubuntu-latest ## the machine the runner will run on (linux, windows, mac)
 
     steps: 
       - name: print a welcome msg
